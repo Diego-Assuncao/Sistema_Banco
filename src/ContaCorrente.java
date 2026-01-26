@@ -12,11 +12,11 @@ public class ContaCorrente extends ContaBancaria{
 
         if(saque > 0 && this.saldo >= saque){
             this.saldo = this.saldo - saque;
-            System.out.println("O SAQUE DO VALOR DE R$"+saque+" FOI REALIZADO COM SUCESSO! ");
+            System.out.println("O SAQUE NO VALOR DE R$"+saque+" FOI REALIZADO COM SUCESSO! ");
             System.out.println("SALDO ATUAL: R$"+this.saldo);
         }
         else{
-            System.out.println("O SAQUE VALOR DE R$"+saque+" NÃO PODE SER REALIZADO POIS É MENOR QUE O SEU SALDO ATUAL! ");
+            System.out.println("O SAQUE NO VALOR DE R$"+saque+" NÃO PODE SER REALIZADO POIS É MENOR QUE O SEU SALDO ATUAL! ");
             System.out.println("SALDO ATUAL R$"+this.saldo);
         }
 
